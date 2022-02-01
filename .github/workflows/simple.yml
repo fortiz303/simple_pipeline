@@ -10,8 +10,8 @@ jobs:
         run: echo "hello from the virtual machine (ubuntu)"
       - name: check-node-version  
         run: node -v
-      - name: changing-my-permissions
-        run: sudo su
+      - name: view-all-users
+        run: less /etc/passwd
   lets-get-it:
     runs-on: ubuntu-latest
     steps:
