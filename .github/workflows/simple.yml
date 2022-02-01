@@ -10,3 +10,8 @@ jobs:
         run: echo "hello from the virtual machine (ubuntu)"
       - name: check-node-version  
         run: node -v
+  lets-get-it:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo-second-string
+        run: echo "hello from the second VM"
