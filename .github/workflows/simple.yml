@@ -10,6 +10,8 @@ jobs:
         run: echo "hello from the virtual machine (ubuntu)"
       - name: check-node-version  
         run: node -v
+      - name: who-am-i
+        run: whoami
   lets-get-it:
     runs-on: ubuntu-latest
     steps:
