@@ -8,4 +8,5 @@ jobs:
     steps:
       - name: echo-a-string
         run: echo "hello from the virtual machine (ubuntu)"
-        run: node -v	
+      - name: check-node-version  
+        run: node -v
