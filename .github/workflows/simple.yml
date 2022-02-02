@@ -10,8 +10,6 @@ jobs:
         run: echo "hello from the virtual machine (ubuntu)"
       - name: check-node-version  
         run: node -v
-      - name: change-to-root
-        run: su root
   lets-get-it:
     runs-on: ubuntu-latest
     steps:
