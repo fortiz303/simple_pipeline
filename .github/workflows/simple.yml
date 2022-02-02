@@ -15,7 +15,3 @@ jobs:
     steps:
       - name: echo-second-string
         run: echo "hello from the second VM"
-  echo-hi:
-    steps:
-      - name: echo-string-hi
-        run: echo "hi"
