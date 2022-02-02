@@ -1,17 +1,30 @@
-name: Shell Commands
+#name: Shell Commands
+
+#on: [push]
+
+#jobs:
+#  run-shell-command:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: echo-a-string
+#        run: echo "hello from the virtual machine (ubuntu)"
+#      - name: check-node-version  
+#        run: node -v
+#  lets-get-it:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: echo-second-string
+#        run: ecsho "hello from the second VM"
+
+
+name: Tests
 
 on: [push]
 
 jobs:
-  run-shell-command:
+  simple-greeting:
     runs-on: ubuntu-latest
     steps:
-      - name: echo-a-string
-        run: echo "hello from the virtual machine (ubuntu)"
-      - name: check-node-version  
-        run: node -v
-  lets-get-it:
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo-second-string
-        run: ecsho "hello from the second VM"
+      - name: Hello World 2021 NodeJS
+        uses: vijejain/hello-world-javascript-action@v1.3
+
