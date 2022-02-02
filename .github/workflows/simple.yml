@@ -16,7 +16,6 @@ jobs:
       - name: echo-second-string
         run: echo "hello from the second VM"
   echo-hi:
-    runs-on: ubuntu-latest
     steps:
       - name: echo-string-hi
         run: echo "hi"
